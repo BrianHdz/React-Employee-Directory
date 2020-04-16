@@ -1,0 +1,86 @@
+[ 
+    {
+      "id": 1,
+      "name": "SpongeBob",
+      "occupation": "Fry Cook",
+      "location": "A Pineapple Under the Sea",
+      "age": 21
+    },
+    {
+      "id": 2,
+      "name": "Mr. Krabs",
+      "occupation": "Owner",
+      "location": "A Giant Anchor",
+      "age": 52
+    },
+    {
+      "id": 3,
+      "name": "Squidward",
+      "occupation": "Cashier",
+      "location": "An Easter Island Head",
+      "age": 33
+    },
+    {
+      "id": 4,
+      "name": "Dexter",
+      "occupation": "Supervisor",
+      "location": "A Secret Laboratory",
+      "age": 11
+    },
+    {
+      "id": 5,
+      "name": "Courage",
+      "occupation": "Supervisor",
+      "location": "Nowhere, Kansas",
+      "age": 3
+    },
+    {
+      "id": 6,
+      "name": "Doug Funnie",
+      "occupation": "Attorney",
+      "location": "Bluffington",
+      "age": 16
+    },
+    {
+      "id": 7,
+      "name": "Bugs Bunny",
+      "occupation": "Software Dev",
+      "location": "A Rabbit Burrow",
+      "age": 27
+    },
+    {
+      "id": 8,
+      "name": "Johnny Bravo",
+      "occupation": "Software Dev",
+      "location": "Aron City",
+      "age": 25
+    },
+    {
+      "id": 9,
+      "name": "Tommy Pickles",
+      "occupation": "Software Dev",
+      "location": "California",
+      "age": 1
+    },
+    {
+      "id": 10,
+      "name": "Rocko",
+      "occupation": "Software Dev",
+      "location": "O-Town, California",
+      "age": 30
+    },
+    {
+      "id": 11,
+      "name": "Captain Planet",
+      "occupation": "Janitor",
+      "location": "Earth",
+      "age": 1000000
+    },
+    {
+      "id": 12,
+      "name": "Ickis",
+      "occupation": "Manager",
+      "location": "Under a City Dump",
+      "age": 14
+    }
+  ]
