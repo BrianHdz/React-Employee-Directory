@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import FriendCard from "./components/SearchForm";
-import Wrapper from "./components/Container";
+import AgesButton from "./components/AgesButton";
+import Container from "./components/Container";
+import NamesButton from "./components/NamesButton";
 import Title from "./components/Navbar";
+import SearchForm from "./components/SearchForm";
 import friends from "./friends.json";
+
 
 class App extends Component {
   // Setting this.state.friends to the friends json array
@@ -10,30 +13,44 @@ class App extends Component {
     friends
   };
 
-  filterLastName = id => {
+  sortNames = () => {
     // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
+    let friends = this.state.friends.sort((a, b) => (a.name > b.name) ? 1 : -1)
+      //.map((item, i) => <SearchForm key={i} data={item} />);
     // Set this.state.friends equal to the new friends array
     this.setState({ friends });
+    console.log("hello")
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  sortAges = () => {
+    console.log("HELLLO")
+  }
+
+  // Map over this.state.friends and render a SearchForm component for each friend object
   render() {
+    //console.log(this.state.friends.sort((a, b) => (a.name > b.name) ? 1 : -1))
+    // .map(data => data.name)
     return (
-      <Wrapper>
+      <Container>
         <Title>Friends List</Title>
+        <NamesButton cb={this.sortNames}/> <AgesButton onClick={this.sortAges}/>
+        
         {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
+          <SearchForm
             name={friend.name}
             age={friend.age}
             occupation={friend.occupation}
             location={friend.location}
           />
         ))}
-      </Wrapper>
+        {/* <ul>
+          {
+            this.state.friends.map((friend, i) => <SearchForm
+              key={i} data={friend} />)
+          }
+
+        </ul> */}
+        </Container>
     );
   }
 }

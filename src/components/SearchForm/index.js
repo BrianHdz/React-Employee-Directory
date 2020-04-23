@@ -1,4 +1,5 @@
 // activity 23
+// src/components/SearchForm
 
 import React from "react";
 import "./style.css";
@@ -7,7 +8,7 @@ import "./style.css";
 
 
 function SearchForm(props) {
-  console.log(props)
+  // console.log(props)
   return (
     <div className="card">
       
@@ -25,8 +26,7 @@ function SearchForm(props) {
           <li>
             <strong>Location:</strong> {props.location}
           </li>
-          
-        </ul>
+        </ul>  
       </div>
       
     </div>
