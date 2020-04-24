@@ -1,5 +1,5 @@
 import React from "react";
-import SearchForm from "../SearchForm";
+// import SearchForm from "../SearchForm";
 
 function Navbar() {
   return (
@@ -7,7 +7,7 @@ function Navbar() {
       <a className="navbar-brand" href="/">
         <h1>Employee Directory</h1>
       </a>
-      <SearchForm />
+      {/* <SearchForm /> */}
     </nav>
   );
 }

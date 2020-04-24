@@ -1,9 +1,6 @@
 import React from "react";
 
 
-// Using the datalist element we can create autofill suggestions based on the props.breeds array
-
-
 function NamesButton(props) {
     // console.log(props)
 

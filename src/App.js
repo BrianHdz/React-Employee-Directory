@@ -24,7 +24,9 @@ class App extends Component {
 
   sortAges = () => {
     console.log("HELLLO")
-  }
+    let friends = this.state.friends.sort((a,b) => (a.age > b.age) ? 1 : -1)
+    this.setState({ friends });
+  };
 
   // Map over this.state.friends and render a SearchForm component for each friend object
   render() {
@@ -32,8 +34,9 @@ class App extends Component {
     // .map(data => data.name)
     return (
       <Container>
+      
         <Title>Friends List</Title>
-        <NamesButton cb={this.sortNames}/> <AgesButton onClick={this.sortAges}/>
+        <NamesButton cb={this.sortNames}/> <AgesButton cb={this.sortAges}/>
         
         {this.state.friends.map(friend => (
           <SearchForm
@@ -43,13 +46,7 @@ class App extends Component {
             location={friend.location}
           />
         ))}
-        {/* <ul>
-          {
-            this.state.friends.map((friend, i) => <SearchForm
-              key={i} data={friend} />)
-          }
-
-        </ul> */}
+        
         </Container>
     );
   }
